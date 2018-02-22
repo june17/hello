@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gift ethereum" />
+  <meta name="keywords" content="website, wedding" />
+  <meta name="author" content="Wedbee" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <title>Title</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html,body{
+    height: 100%;
+  }
+  .container{
+    height: 100%;
+  }
+  .sections{
+    height: 100%;
+  }
+  .logo{
+    position: fixed;
+  }
+  .wedding-basic-info{
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 2.5%;
+  }
+    .wedding-basic-info>h1{
+      font-size: 68px;
+    }
+  .sections{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+     height: 100%;
+  }
+  .left-fixed-section{
+
+  }
+  .hero-section{
+    background: #D4F2F8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    min-height: 840px;
+  }
+  .second-section{
+    min-height: 840px;
+    background: #000;
+  }
+
+  .rsvp-widget{
+    background: #FFF6D9;
+  }
+  .wish-widget{
+
+  }
+  .photo-widget{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: #FDAf73;
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sections{
+       grid-template-columns: 1fr;
+    }
+    .hero-section{
+       grid-template-columns: 1fr;
+       grid-auto-flow: row;
+    }
+    .photo-widget{
+
+    }
+  }
+
+  </style>
+</head>
+  <body class="container">
+        <div class="sections">
+            <div class="left-fixed-section">
+                  <header class="logo">
+                    <h4 class="title">Wedbee</h4>
+                  </header>
+                  <div class="wedding-basic-info">
+                    <h1>Priyanka</h1>
+                    <h1>Hanaf</h1>
+                    <p>24th Feb 2018</p>
+                  </div>
+            </div>
+
+            <div class="right-section">
+                <div class="hero-section">
+                  <div class="rsvp-widget">3</div>
+                  <div class="wish-widget">4</div>
+                  <div class="photo-widget">5</div>
+                </div>
+                <div class="second-section">
+                    <div class="map-area"></div>
+                    <div class="map-toggle"></div>
+                </div>
+            </div>
+
+      </div>
+</body>
+</html>
